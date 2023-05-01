@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .renklendir{
+            color: blueviolet;
+            font-size: larger;
+        }
+        body{
+        margin: 0;
+        padding: 0;
+       };
+       #message-box{
+        background-color: darkcyan;
+        text-align: center;
+        color: rebeccapurple;
+       };
+       #header{
+        cursor: pointer;
+        height: 20px;
+        padding: 10px;
+        border-bottom: 1px solid wheat;
+       }
+       #content{
+        height: 50px;
+        padding: 10px;
+       }
+       #close{
+        float: right;
+       }
+       #close:hover{
+        background-color: grey;
+       }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="">
+        <p>Adınız:<input class="control" type="text"></p>
+        <p>Öğrenim Durumu:
+            <select class="control">
+                <option value="ilkoukul">ilkoukul</option>
+                <option value="ortaokul">ortaokul</option>
+                <option value="lise">lise</option>
+                <option value="üniversite">üniversite</option>
+
+            </select>
+        </p>
+    </form>
+ 
+    <div id="message-box">
+        <div id="header">
+            <span id="close">X</span>Mesajiniz var
+        </div>
+        
+   </div>
+
+    <script>
+       $(document).ready(function(){
+            $(".control").change(function(){
+                console.log($(this).val());
+            })
+       });
+
+    </script>
+
+
+</body>
+
+</html>

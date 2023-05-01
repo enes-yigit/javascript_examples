@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <a href="#"><link rel="stylesheet" href="#"></a>
+
+
+    <h3 id="header">Listeler</h3>
+
+    <ul id="liste">
+        <li class="item1">Öge 1</li>
+        <li>Öge 2 <a href="#" >link</a>  </li>
+        <li>Öge 3</li>
+    </ul>
+
+
+
+
+
+
+    <script>
+        $("#header").css("color","pink");
+        $("a").css("text-decoration","none")
+
+        var styles={
+            color: "green",
+            fontSize:"21px",
+        };
+
+        $("ul li").css(styles);
+
+        $("a").css({
+            color:"black",
+            fontSize:"20px",
+        });
+
+    </script>
+
+ 
+</body>
+
+</html>

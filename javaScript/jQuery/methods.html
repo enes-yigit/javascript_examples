@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .x{
+            background-color: aquamarine;
+        }
+        .y{
+            background-color: red;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+    <a href="#"><link rel="stylesheet" href="#"></a>
+
+
+    <h3 id="header">Listeler</h3>
+
+    <ul id="liste">
+        <li class="item1">Öge 1</li>
+        <li>Öge 2 <a href="#" >link</a>  </li>
+        <li>Öge 3</li>
+    </ul>
+
+    <input id="ad" type="text" placeholder="adiniz">;
+    <input id="soyad" type="text" placeholder="soyadiniz">;
+    <button id="btnKayit" onclick="kayitOl();"">Kayit Ol</button>
+
+
+
+
+    <script>
+        $("h3").text("Güncellenmiş Liste");
+
+        function kayitOl(){
+            var ad= $("#ad").val();
+            var soyad= $("#soyad").val();
+
+            console.log(ad + " " + soyad +" "+"kursa kayit oldu:)")
+
+            $("#ad").addClass("x");
+            $("#soyad").addClass("y");
+        }
+    </script>
+
+ 
+</body>
+
+</html>

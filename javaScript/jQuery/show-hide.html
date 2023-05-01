@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .renklendir{
+            color: blueviolet;
+            font-size: larger;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p> Sifirdan ileri düzey web gelistirme </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+
+
+
+    <script>
+       $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(2000);
+            });
+
+            $("#show").click(function(){
+                $("p").show("slow",function(){
+                    alert("paragraf göster")
+                });
+            });
+
+            $("#toggle").click(function(){
+                $("p").toggle("fast")
+            })
+
+       });
+
+    </script>
+
+
+</body>
+
+</html>

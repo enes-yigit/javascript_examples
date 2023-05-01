@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .renklendir {
+            color: blueviolet;
+            font-size: larger;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div>
+        <p> Sifirdan ileri düzey web gelistirme </p>
+
+        <img src="ft1.jpg" width="150px">
+    </div>
+
+    <br><br>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+    <button id="fadein">Fade İn</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade To</button>
+    <button id="toggle2">Toggle</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#slideup").click(function () {
+                $("div").slideUp(3000)
+            });
+
+            $("#slidedown").click(function () {
+                $("div").slideDown(1000, function () {
+                    alert("div gösterildi")
+                });
+            });
+
+            $("#toggle").click(function () {
+                $("div").slideToggle("slow");
+            });
+        });
+        //***********************************
+        $(document).ready(function () {
+
+            $("#fadein").click(function () {
+                $("div").fadeIn("slow")
+            });
+
+            $("#fadeout").click(function () {
+                $("div").fadeOut(1000);
+            });
+
+            $("#fadeto").click(function () {
+                $("div").fadeTo("slow",0.3);
+            });
+
+            $("#toggle2").click(function () {
+                $("div").fadeToggle("slow");
+            });
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

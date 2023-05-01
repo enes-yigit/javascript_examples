@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .renklendir{
+            color: blueviolet;
+            font-size: larger;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quod quibusdam officiis maiores incidunt.
+        Voluptate a debitis assumenda quis porro voluptas. Magnam odit ea cupiditate, voluptatum reiciendis fugit labore
+        facilis?
+    </p>
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quod quibusdam officiis maiores incidunt.
+        Voluptate a debitis assumenda quis porro voluptas. Magnam odit ea cupiditate, voluptatum reiciendis fugit labore
+        facilis?
+    </p>
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quod quibusdam officiis maiores incidunt.
+        Voluptate a debitis assumenda quis porro voluptas. Magnam odit ea cupiditate, voluptatum reiciendis fugit labore
+        facilis?
+    </p>  
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quod quibusdam officiis maiores incidunt.
+        Voluptate a debitis assumenda quis porro voluptas. Magnam odit ea cupiditate, voluptatum reiciendis fugit labore
+        facilis?
+    </p>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).addClass("renklendir");
+            })
+        })
+
+    </script>
+
+
+</body>
+
+</html>
